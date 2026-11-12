@@ -1,0 +1,14 @@
+includes:
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+
+parameters:
+    level: max
+    paths:
+        - src
+        - tests
+
+    ignoreErrors:
+        # The ORM mapping the record assigns its identifier.
+        -
+            identifier: property.unusedType
+            path: src/ConsentRecord.php

@@ -1,0 +1,45 @@
+{
+    "name": "florentingarnier/cookie-consent",
+    "description": "Cookie consent policy, purpose by purpose: the categories, the consent cookie read by the browser and the proof of each choice.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/FlorentinGarnier/cookie-consent",
+    "authors": [
+        {
+            "name": "Florentin Garnier",
+            "homepage": "https://github.com/FlorentinGarnier"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/FlorentinGarnier/cookie-consent/issues",
+        "source": "https://github.com/FlorentinGarnier/cookie-consent",
+        "security": "https://github.com/FlorentinGarnier/cookie-consent/security/policy"
+    },
+    "keywords": [
+        "cookie",
+        "consent",
+        "gdpr",
+        "rgpd"
+    ],
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "phpstan/phpstan-phpunit": "^2.0",
+        "phpunit/phpunit": "^10.5 || ^11.5 || ^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "FlorentinGarnier\\CookieConsent\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FlorentinGarnier\\CookieConsent\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
